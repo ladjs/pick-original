@@ -1,7 +1,7 @@
 {
   "name": "pick-original",
   "description": "Transform an Object that was transformed to return only the original properties recursively picked if they are not undefined.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)",
   "bugs": {
     "url": "https://github.com/ladjs/pick-original/issues",
