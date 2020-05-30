@@ -4078,6 +4078,11 @@ nlcst-to-string@^2.0.0:
   resolved "https://registry.yarnpkg.com/nlcst-to-string/-/nlcst-to-string-2.0.4.tgz#9315dfab80882bbfd86ddf1b706f53622dc400cc"
   integrity sha512-3x3jwTd6UPG7vi5k4GEzvxJ5rDA7hVUIRNHPblKuMVP9Z3xmlsd9cgLcpAMkc5uPOBna82EeshROFhsPkbnTZg==
 
+node-dotify@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/node-dotify/-/node-dotify-1.0.1.tgz#ab2eab6d4a01ce37c61a04983c763ed07c29fe46"
+  integrity sha1-qy6rbUoBzjfGGgSYPHY+0Hwp/kY=
+
 node-fetch@^2.2.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"

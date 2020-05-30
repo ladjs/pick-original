@@ -37,12 +37,20 @@ yarn add pick-original
 ## Usage
 
 ```js
-const PickOriginal = require('pick-original');
+const pickOriginal = require('pick-original');
 
-const pickOriginal = new PickOriginal();
+function createObj(doc) {
+  doc.id = Date.now().toString();
+  return doc;
+}
 
-console.log(pickOriginal.renderName());
-// script
+const original = { foo: 'bar' };
+
+const transformed = pickOriginal(createObj(original), original);
+
+console.log(transformed);
+
+// { foo: 'bar' }
 ```
 
 

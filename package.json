@@ -15,7 +15,10 @@
   "contributors": [
     "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "node-dotify": "^1.0.1"
+  },
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",

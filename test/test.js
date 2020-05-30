@@ -1,27 +1,67 @@
 const test = require('ava');
 
-const Script = require('..');
+const pickOriginal = require('..');
 
-test.beforeEach(t => {
-  const script = new Script({});
-  Object.assign(t.context, { script });
-});
-
-test('returns itself', t => {
-  t.true(t.context.script instanceof Script);
-});
-
-test('sets a config object', t => {
-  const script = new Script(false);
-  t.true(script instanceof Script);
-});
-
-test('renders name', t => {
-  const { script } = t.context;
-  t.is(script.renderName(), 'script');
-});
-
-test('sets a default name', t => {
-  const { script } = t.context;
-  t.is(script._name, 'script');
+test('picks original', t => {
+  t.deepEqual(
+    pickOriginal(
+      {
+        foo: {
+          boop: { baz: false },
+          array: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+          arr: [
+            {
+              baz: true,
+              bar: false,
+              beep: {
+                foo: [
+                  1,
+                  {
+                    baz: 'foo'
+                  },
+                  3
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        foo: {
+          array: [0, 1, 2, 3, 4],
+          arr: [
+            {
+              baz: true,
+              beep: {
+                foo: [
+                  1,
+                  {
+                    baz: 'foo'
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ),
+    {
+      foo: {
+        array: [0, 1, 2, 3, 4],
+        arr: [
+          {
+            baz: true,
+            beep: {
+              foo: [
+                1,
+                {
+                  baz: 'foo'
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  );
 });

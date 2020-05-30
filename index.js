@@ -1,14 +1,14 @@
-class Script {
-  constructor(config) {
-    config = { ...config };
-    this._name = config.name || 'script';
+const _ = require('lodash');
+const dotify = require('node-dotify');
 
-    this.renderName = this.renderName.bind(this);
+const pickOriginal = function(transformed, original) {
+  const obj = {};
+  for (const key of Object.keys(dotify(original))) {
+    const value = _.get(transformed, key);
+    if (!_.isUndefined(value)) _.set(obj, key, value);
   }
 
-  renderName() {
-    return this._name;
-  }
-}
+  return obj;
+};
 
-module.exports = Script;
+module.exports = pickOriginal;
