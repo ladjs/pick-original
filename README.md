@@ -1,4 +1,4 @@
-# pick-original
+# [**@ladjs/pick-original**](https://github.com/ladjs/pick-original)
 
 [![build status](https://img.shields.io/travis/com/ladjs/pick-original.svg)](https://travis-ci.com/ladjs/pick-original)
 [![code coverage](https://img.shields.io/codecov/c/github/ladjs/pick-original.svg)](https://codecov.io/gh/ladjs/pick-original)
@@ -6,7 +6,7 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![made with lass](https://img.shields.io/badge/made_with-lass-95CC28.svg)](https://lass.js.org)
 [![license](https://img.shields.io/github/license/ladjs/pick-original.svg)](LICENSE)
-[![npm downloads](https://img.shields.io/npm/dt/pick-original.svg)](https://npm.im/pick-original)
+[![npm downloads](https://img.shields.io/npm/dt/@ladjs/pick-original.svg)](https://npm.im/@ladjs/pick-original)
 
 > Transform an Object that was transformed to return only the original properties recursively picked if they are not undefined.
 
@@ -24,20 +24,20 @@
 [npm][]:
 
 ```sh
-npm install pick-original
+npm install @ladjs/pick-original
 ```
 
 [yarn][]:
 
 ```sh
-yarn add pick-original
+yarn add @ladjs/pick-original
 ```
 
 
 ## Usage
 
 ```js
-const pickOriginal = require('pick-original');
+const pickOriginal = require('@ladjs/pick-original');
 
 function createObj(doc) {
   doc.id = Date.now().toString();
