@@ -16,13 +16,14 @@
     "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)"
   ],
   "dependencies": {
-    "lodash": "^4.17.15",
-    "node-dotify": "^1.0.1"
+    "@ladjs/node-dotify": "^1.0.2",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "ava": "latest",
+    "bson-objectid": "^1.3.0",
     "codecov": "latest",
     "cross-env": "latest",
     "eslint": "6.x",

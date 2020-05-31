@@ -1,3 +1,4 @@
+const ObjectID = require('bson-objectid');
 const test = require('ava');
 
 const pickOriginal = require('..');
@@ -62,6 +63,23 @@ test('picks original', t => {
           }
         ]
       }
+    }
+  );
+});
+
+test('works with mongodb objectid', t => {
+  const _id = new ObjectID();
+  t.deepEqual(
+    pickOriginal(
+      {
+        _id
+      },
+      {
+        _id
+      }
+    ),
+    {
+      _id
     }
   );
 });

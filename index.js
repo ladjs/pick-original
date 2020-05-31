@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const dotify = require('node-dotify');
+const dotify = require('@ladjs/node-dotify');
 
 const pickOriginal = function(transformed, original) {
   const obj = {};
