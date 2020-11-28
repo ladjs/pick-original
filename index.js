@@ -1,14 +1,14 @@
 const _ = require('lodash');
-const dotify = require('node-dotify');
+const dotify = require('@ladjs/node-dotify');
 
-const pickOriginal = function(transformed, original) {
-  const obj = {};
+const pickOriginal = function (transformed, original) {
+  const object = {};
   for (const key of Object.keys(dotify(original))) {
     const value = _.get(transformed, key);
-    if (!_.isUndefined(value)) _.set(obj, key, value);
+    if (!_.isUndefined(value)) _.set(object, key, value);
   }
 
-  return obj;
+  return object;
 };
 
 module.exports = pickOriginal;

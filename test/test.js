@@ -3,7 +3,7 @@ const test = require('ava');
 
 const pickOriginal = require('..');
 
-test('picks original', t => {
+test('picks original', (t) => {
   t.deepEqual(
     pickOriginal(
       {
@@ -67,7 +67,7 @@ test('picks original', t => {
   );
 });
 
-test('works with mongodb objectid', t => {
+test('works with mongodb objectid', (t) => {
   const _id = new ObjectID();
   t.deepEqual(
     pickOriginal(
