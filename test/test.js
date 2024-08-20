@@ -1,6 +1,5 @@
 const ObjectID = require('bson-objectid');
 const test = require('ava');
-
 const pickOriginal = require('..');
 
 test('picks original', (t) => {

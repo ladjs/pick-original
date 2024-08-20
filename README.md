@@ -1,12 +1,10 @@
 # [**@ladjs/pick-original**](https://github.com/ladjs/pick-original)
 
-[![build status](https://img.shields.io/travis/com/ladjs/pick-original.svg)](https://travis-ci.com/ladjs/pick-original)
-[![code coverage](https://img.shields.io/codecov/c/github/ladjs/pick-original.svg)](https://codecov.io/gh/ladjs/pick-original)
+[![build status](https://github.com/ladjs/pick-original/actions/workflows/ci.yml/badge.svg)](https://github.com/ladjs/pick-original/actions/workflows/ci.yml)
 [![code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![made with lass](https://img.shields.io/badge/made_with-lass-95CC28.svg)](https://lass.js.org)
 [![license](https://img.shields.io/github/license/ladjs/pick-original.svg)](LICENSE)
-[![npm downloads](https://img.shields.io/npm/dt/@ladjs/pick-original.svg)](https://npm.im/@ladjs/pick-original)
 
 > Transform an Object that was transformed to return only the original properties recursively picked if they are not undefined.
 
@@ -25,12 +23,6 @@
 
 ```sh
 npm install @ladjs/pick-original
-```
-
-[yarn][]:
-
-```sh
-yarn add @ladjs/pick-original
 ```
 
 
@@ -56,18 +48,16 @@ console.log(transformed);
 
 ## Contributors
 
-| Name           | Website                    |
-| -------------- | -------------------------- |
-| **Nick Baugh** | <http://niftylettuce.com/> |
+| Name         |
+| ------------ |
+| **Titanism** |
 
 
 ## License
 
-[MIT](LICENSE) © [Nick Baugh](http://niftylettuce.com/)
+[MIT](LICENSE) © Titanism
 
 
-## 
+##
 
 [npm]: https://www.npmjs.com/
-
-[yarn]: https://yarnpkg.com/
