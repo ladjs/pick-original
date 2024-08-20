@@ -16,7 +16,7 @@
     "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)"
   ],
   "dependencies": {
-    "@ladjs/node-dotify": "^2.0.0",
+    "@ladjs/node-dotify": "^3.0.0",
     "lodash": "^4.17.20"
   },
   "devDependencies": {
